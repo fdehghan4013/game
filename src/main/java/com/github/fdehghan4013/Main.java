@@ -1,9 +1,17 @@
 package com.github.fdehghan4013;
 
+import com.sun.org.slf4j.internal.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    private final static Logger LOGGER =  LogManager.getLogger();
+
+    public static void main(String[] args)  {
+        LOGGER.info("Start my APP");
+
         System.out.println("Hello everyone, welcome to our little game");
 
         Board   board      = new Board();

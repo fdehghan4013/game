@@ -11,6 +11,10 @@ public class Board {
         }
     }
 
+    public Column[] getColumns() {
+        return columns;
+    }
+
     public void putDiscInColumn(int columnIndex) {
         columns[columnIndex].putDiscInRow(turn);
 
